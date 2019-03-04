@@ -1,3 +1,4 @@
+
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -14,13 +15,13 @@ module.exports = {
       { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
     ]
   },
-  devServer: {
-    historyApiFallback: true
-  },
   mode: 'development',
   plugins: [
     new HtmlWebpackPlugin({
       template: 'app/index.html'
     })
-  ]
+  ],
+  devServer: {
+    historyApiFallback: true,
+  },
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+var React = require('react');
 
 class Battle extends React.Component {
   render() {
@@ -10,4 +10,4 @@ class Battle extends React.Component {
   }
 }
 
-export default Battle;
+module.exports = Battle;
